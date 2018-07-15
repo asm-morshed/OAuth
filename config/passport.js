@@ -3,6 +3,11 @@ var LocalStrategy = require('passport-local').Strategy;
 var User = require('../app/models/user');
 
 module.exports = (passport)=>{
+    
+    //Passport will maintain persistent login sessions. In order for persistent sessions to work, 
+    //the authenticated user must be serialized to the session, and deserialized when subsequent 
+    //requests are made.
+
     passport.serializeUser ((user,done)=>{
         done(null,user.id);
     })

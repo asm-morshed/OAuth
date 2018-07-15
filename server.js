@@ -9,9 +9,12 @@ var mongoose = require('mongoose');
 var passport = require('passport');
 
 var flash = require('connect-flash');
-
+//The flash is a special area of the session used for storing messages. 
+//Messages are written to the flash and cleared after being displayed to the use
 
 var morgan = require('morgan');
+//HTTP request logger middleware for node.js
+
 
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');

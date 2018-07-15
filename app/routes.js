@@ -1,4 +1,5 @@
 module.exports = function (app, passport){
+    console.log("This is from routes:",passport)
     console.log("From routes js")
     app.get('/',(req,res)=>{
         res.render('index.ejs');
